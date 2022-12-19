@@ -25,14 +25,24 @@ public class Device {
     }
 
     public void setBrand(String brand) {
-        this.brand = brand;
+        if (!brand.isEmpty()&&!brand.isBlank()&&brand!=null)
+        {
+            this.brand = brand;
+        }
+
+
     }
 
-    public void setModel(String model) {
-        this.model = model;
+    public void setModel(String model)
+    {
+        if (!model.isEmpty()&&!model.isBlank()&&model!=null)
+        {
+            this.model = model;
+        }
     }
 
     public void setPrice(double price) {
+        if (price>0)
         this.price = price;
     }
 
