@@ -53,4 +53,21 @@ public class Device {
     public void setHasPowerButton(boolean hasPowerButton) {
         this.hasPowerButton = hasPowerButton;
     }
+
+    public void turnOn(){
+        System.out.println("system is on");
+    }
+    public void turnOff(){
+        System.out.println("system is off");
+    }
+
+    public String toString() {
+        return "Device{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", price=" + price +
+                ", hasBattery=" + hasBattery +
+                ", hasPowerButton=" + hasPowerButton +
+                '}';
+    }
 }
