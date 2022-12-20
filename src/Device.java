@@ -43,7 +43,7 @@ public class Device {
 
     public void setPrice(double price) {
         if (price>0)
-        this.price = price;
+            this.price = price;
     }
 
     public void setHasBattery(boolean hasBattery) {
